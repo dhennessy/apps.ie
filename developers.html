@@ -1,0 +1,20 @@
+---
+layout: page
+title: Developers
+permalink: /developers/
+---
+
+<div class="home">
+
+    <div class="info-wrapper">
+{% for developer in site.data.developers %}
+        <div class="info-col">
+          <div class="info-card">
+            <a href="{{ developer.website }}">
+              {{ developer.name }}
+            </a>
+          </div>
+        </div>
+{% endfor %}
+    </div>
+</div>
